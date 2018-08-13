@@ -1,14 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/App.css';
 import Header from './Header';
-import CatGallery from './CatGallery';
+import testCats from '../test-cats';
+import CatPreview from './CatPreview';
 
-class App extends Component {
+class App extends React.Component {
+state = { cats: testCats }
   render() {
     return (
       <div className="App">
         <Header title="Cats!"/>
-        <CatGallery/>
+        <div className="gallery">
+          {Object.keys(this.state.cats).map(key => (
+            <CatPreview
+            key={key}
+            index={key}
+            data={this.state.cats[key]}
+            />
+          ))}
+        </div>
       </div>
     );
   }
