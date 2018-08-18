@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import App from "./App";
-import Open from "./Open";
-import Match from "./Match";
-import CatNotFound from "./CatNotFound";
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import App from './App';
+import Open from './Open';
+import Match from './Match';
+import CatNotFound from './CatNotFound';
 
 const Router = () => (
   <BrowserRouter>

@@ -15,24 +15,28 @@ class App extends React.Component {
 
   render() {
     const catId = this.props.match.params.catId;
-    const i = this.state.cats.findIndex((cat) => (cat.name).toLowerCase() === catId);
+    const i = this.state.cats.findIndex(cat => cat.name.toLowerCase() === catId);
     const { name, age, excerpt, image } = this.state.cats[i];
-    
+
     return (
       <div className="cat">
         <header>
-          <div className="logo-primary"></div>
+          <div className="logo-primary" />
         </header>
         <main>
-          <div className="previous btn"></div>
+          <div className="previous btn" />
           {/* This really needs to be dealt with
               For some reason content: with emoji does not work
               So here's a CSS heavy hack for right now*/}
-          <div className="match"><div className="heart"></div></div>
-          <img src={image} alt={name}/>
+          <div className="match">
+            <div className="heart" />
+          </div>
+          <img src={image} alt={name} />
           <div className="meta-data">
-            <div className="info btn" onClick={this.openProfile}></div>
-            <h2>{name}, {age}</h2>
+            <div className="info btn" onClick={this.openProfile} />
+            <h2>
+              {name}, {age}
+            </h2>
             <p>{excerpt}</p>
           </div>
           <article className="profile-data">
@@ -40,7 +44,7 @@ class App extends React.Component {
           </article>
         </main>
       </div>
-    )
+    );
   }
 }
 
