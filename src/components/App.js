@@ -1,16 +1,18 @@
 import React from 'react';
 import '../css/App.css';
 import testCats from '../test-cats';
+import { Link } from 'react-router-dom';
 
 class App extends React.Component {
   state = { cats: testCats };
 
-  openProfile() {
-    const openButton = document.querySelector('.info');
+  openProfile = e => {
     const content = document.querySelector('.profile-data');
 
-    openButton.classList.toggle('close');
+    e.target.classList.toggle('close');
     content.classList.toggle('visible');
+  };
+
   nextCat = () => {
     const cats = { ...this.state.cats };
     const catId = this.props.match.params.catId;
@@ -19,7 +21,7 @@ class App extends React.Component {
     currentIndex += 1;
     if (currentIndex > totalCats) {
       currentIndex = 1;
-  }
+    }
     const nextCat = cats[currentIndex].name.toLowerCase();
 
     this.props.history.push(`/cats/${nextCat}`);
@@ -45,7 +47,7 @@ class App extends React.Component {
           </Link>
           <img src={image} alt={name} />
           <div className="meta-data">
-            <div className="info btn" onClick={this.openProfile} />
+            <div className="info profile-btn" onClick={this.openProfile} />
             <h2>
               {name}, {age}
             </h2>
