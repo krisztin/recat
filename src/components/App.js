@@ -14,6 +14,10 @@ class App extends React.Component {
   }
 
   render() {
+    const catId = this.props.match.params.catId;
+    const i = this.state.cats.findIndex((cat) => (cat.name).toLowerCase() === catId);
+    const { name, age, excerpt, image } = this.state.cats[i];
+    
     return (
       <div className="cat">
         <header>
@@ -25,11 +29,11 @@ class App extends React.Component {
               For some reason content: with emoji does not work
               So here's a CSS heavy hack for right now*/}
           <div className="match"><div className="heart"></div></div>
-          <img src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=05297d6a133548da4eac65f10cdfd37d&auto=format&fit=crop&w=700&q=60" alt="cat"/>
+          <img src={image} alt={name}/>
           <div className="meta-data">
             <div className="info btn" onClick={this.openProfile}></div>
-            <h2>Meowskin, 2</h2>
-            <p>Professional mouse chaser</p>
+            <h2>{name}, {age}</h2>
+            <p>{excerpt}</p>
           </div>
           <article className="profile-data">
             <p>placeholder placeholder</p>
