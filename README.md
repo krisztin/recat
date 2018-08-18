@@ -10,7 +10,7 @@ Let's try and build a Tinder inspired SPA with React.
 
 I drew up the completed project with required components and functionalities needed. The optimist in me said just go for it. The realist decided to draw up an MVP version with a couple of components taken out and some functions dumbed down or excluded.
 
-I think I've ended up with a quite doable little few day long project. Until...
+Looked like it was quite doable in a few days. Until...
 
 ### Routing
 
@@ -18,9 +18,9 @@ I thought I got React Router...turns out, not so much.
 
 #### The problem
 
-From the opening page you should be taken to a random cat when clicking 'Start'. I got a little perplexed. Nothing I've tried with <Route to> etc. worked, and I kept breaking the <Link>.
+From the opening page you should be taken to a random cat when clicking 'Start'. I got a little perplexed. Nothing I've tried with <Route to> etc. worked, and I kept breaking the <Link>. To be fair, it was very late at night and my brain was having one of those 'toddler tantrum' times when it refuses to put in any effort until you treat it with a little YouTube but that was not going to happen.
 
-I have an inkling I will have to get intimate with `history.push`
+Now, on Day 2, with fresh eyes I have an inkling the answer lies with `history.push`
 
 #### The solution
 
