@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./App";
 import Open from "./Open";
 import Match from "./Match";
+import CatNotFound from "./CatNotFound";
 
 const Router = () => (
   <BrowserRouter>
@@ -10,7 +11,8 @@ const Router = () => (
       <Route exact path="/" component={Open} />
       <Route path="/cats/:catId" component={App} />
       <Route path="/match" component={Match} />
-      {/* <Route component={NotFound} /> */}
+      {/* Still to do: cats/non-existent-cat should Route to CatNotFound */}
+      <Route component={CatNotFound} />
     </Switch>
   </BrowserRouter>
 );
