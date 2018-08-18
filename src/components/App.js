@@ -28,9 +28,9 @@ class App extends React.Component {
           {/* This really needs to be dealt with
               For some reason content: with emoji does not work
               So here's a CSS heavy hack for right now*/}
-          <div className="match">
+          <Link to="/match" className="match-btn">
             <div className="heart" />
-          </div>
+          </Link>
           <img src={image} alt={name} />
           <div className="meta-data">
             <div className="info btn" onClick={this.openProfile} />

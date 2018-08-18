@@ -1,0 +1,11 @@
+.match {
+  text-align: center;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+.match h1 {
+  font-family: 'Satisfy', cursive;
+  line-height: 1em;
+}
