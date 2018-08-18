@@ -1,7 +1,7 @@
 const cats = [
   {
     "name": "Meowskin",
-    "image": "http://via.placeholder.com/350x150",
+    "image": "https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=05297d6a133548da4eac65f10cdfd37d&auto=format&fit=crop&w=700&q=60",
     "age" : 2,
     "excerpt" : "professional mouse hounter",
     "gender": "male"
