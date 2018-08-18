@@ -1,17 +1,138 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #d81b60;
+  --primary-dark: #a00037;
 }
 
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
+.cat {
+  background: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-title {
-  font-size: 1.5em;
+.cat main {
+  position: relative;
 }
 
-.App-intro {
-  font-size: large;
+img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.meta-data {
+  padding: 16px 0;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a7000000', GradientType=0);
+  /* IE6-9 */
+}
+
+.meta-data h2,
+.meta-data p {
+  margin: 0;
+  padding: 0 0 0.5em 2em;
+  font-weight: 400;
+}
+
+.profile-data {
+  position: absolute;
+  z-index: 1;
+  transform: translatey(100%);
+  background: #fff;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.visible {
+  transform: translatey(-100%);
+  opacity: 1;
+}
+
+.info {
+  top: 0;
+  left: calc(100%/2 - 35.3553390593px);
+  transform: rotate(-45deg);
+  transition: all 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info:hover,
+.previous:hover {
+  border-color: var(--primary-dark);
+}
+
+.close {
+  transform: rotate(135deg);
+  bottom: 100%;
+  z-index: 99;
+}
+
+.match {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  top: 50%;
+  right: 1em;
+}
+
+.previous {
+  top: 50%;
+  left: 1em;
+  transform: rotate(-135deg)
+}
+
+.btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-width: 10px 10px 0 0;
+  border-style: solid;
+  border-color: var(--primary);
+}
+
+.heart {
+  background-color: var(--primary);
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: var(--primary);
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
 }
