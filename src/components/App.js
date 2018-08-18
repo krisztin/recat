@@ -11,7 +11,19 @@ class App extends React.Component {
 
     openButton.classList.toggle('close');
     content.classList.toggle('visible');
+  nextCat = () => {
+    const cats = { ...this.state.cats };
+    const catId = this.props.match.params.catId;
+    let currentIndex = this.state.cats.findIndex(cat => cat.name.toLowerCase() === catId);
+    const totalCats = Object.keys(cats).length - 1;
+    currentIndex += 1;
+    if (currentIndex > totalCats) {
+      currentIndex = 1;
   }
+    const nextCat = cats[currentIndex].name.toLowerCase();
+
+    this.props.history.push(`/cats/${nextCat}`);
+  };
 
   render() {
     const catId = this.props.match.params.catId;
@@ -24,7 +36,7 @@ class App extends React.Component {
           <div className="logo-primary" />
         </header>
         <main>
-          <div className="previous btn" />
+          <div className="next profile-btn" onClick={this.nextCat} />
           {/* This really needs to be dealt with
               For some reason content: with emoji does not work
               So here's a CSS heavy hack for right now*/}
