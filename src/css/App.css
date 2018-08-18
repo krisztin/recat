@@ -39,8 +39,11 @@ img {
 .meta-data h2,
 .meta-data p {
   margin: 0;
-  padding: 0 0 0.5em 2em;
-  font-weight: 400;
+  padding: 0 0 0.5em 32px;
+}
+
+.meta-data h2 {
+  font-weight: 900;
 }
 
 .profile-data {
@@ -66,14 +69,13 @@ img {
   left: calc(100%/2 - 35.3553390593px);
   transform: rotate(-45deg);
   transition: all 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .info:hover,
-.previous:hover {
+.next:hover {
   border-color: var(--primary-dark);
 }
 
@@ -83,7 +85,7 @@ img {
   z-index: 99;
 }
 
-.match {
+.match-btn {
   position: absolute;
   width: 60px;
   height: 50px;
@@ -91,13 +93,13 @@ img {
   right: 1em;
 }
 
-.previous {
+.next {
   top: 50%;
   left: 1em;
   transform: rotate(-135deg)
 }
 
-.btn {
+.profile-btn {
   position: absolute;
   width: 25px;
   height: 25px;
