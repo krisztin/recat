@@ -10,7 +10,7 @@ The idea might sound a tad scandalous but there are only good intentions behind 
 
 ## Day 1-2
 
-I drew up the completed project with required components and functionalities needed. The optimist in me said just go for it. The realist decided to draw up an MVP version with a couple of components taken out and some functions dumbed down or excluded.
+I drew up the complete project with required components and functionalities needed. The optimist in me said just go for it. The realist decided to draw up an MVP version with a couple of components taken out and some functions dumbed down or excluded.
 
 Looked like it was quite doable in a few days. Until...
 
@@ -49,3 +49,7 @@ _I did not really read any of the docs in the end_ :grimacing:
 Well, the MVP at least. I'll probably spend the next day hooking up the repo with Netlify and learning how to automate the process. Then it's time to iron out some kinks and start adding more features.
 
 But I'm calling it quits for today. It's Saturday, I didn't have much time to fiddle with this but my brain is already protesting (I've just spent 30 minutes debugging a simple `if` statement).
+
+# Credit
+
+- Photos from Unsplash. Thanks to [Mikhail Vasilyev](https://unsplash.com/@miklevasilyev), [James Sutton](https://unsplash.com/@jamessutton_photography), [Erik-Jan Leusink](https://unsplash.com/@ejleusink), [Yousef Espanioly](https://unsplash.com/@yespanioly), [Yerlin Matu](https://unsplash.com/@yerlinmatu), [Ludemeula Fernandes](https://unsplash.com/@ludemeula).
