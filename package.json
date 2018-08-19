@@ -17,6 +17,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "copy-redirects": "cp _redirects dist/"
+    "copy-redirects": "cp _redirects build/"
   }
 }
