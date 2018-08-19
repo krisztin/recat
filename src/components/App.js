@@ -20,7 +20,7 @@ class App extends React.Component {
     const totalCats = Object.keys(cats).length - 1;
     currentIndex += 1;
     if (currentIndex > totalCats) {
-      currentIndex = 1;
+      currentIndex = 0;
     }
     const nextCat = cats[currentIndex].name.toLowerCase();
 
