@@ -42,7 +42,7 @@ _I did not really read any of the docs in the end_ :grimacing:
 
 ### End of Day 2
 
-**It's DONE**.
+**It's DONE!**
 
 ![Cat party](https://media.giphy.com/media/achoDiZFxZvdm/giphy.gif)
 
@@ -50,6 +50,24 @@ Well, the MVP at least. I'll probably spend the next day hooking up the repo wit
 
 But I'm calling it quits for today. It's Saturday, I didn't have much time to fiddle with this but my brain is already protesting (I've just spent 30 minutes debugging a simple `if` statement).
 
-# Credit
+### Day 3
+
+:ballot_box_with_check: **Netlify continous deployment**
+
+From now on, everytime I push to master on Github Netlify will build and deploy the app. Magic! :godmode:
+
+There was a tiny bit of fumbling about as I wasn't sure how to put the `_redirects` file - essentially due to the use of React Router - in the automatically built `build` folder. First option was to create a `netlify.toml` file with all the build scripts but that looked a bit too much for just one file with one line of content. Thankfully, I've found the Netlify Playground where I've realised that I could just put a script in `package.json` and then provide netlify with the command chain of `npm run build && npm run copy-redirects`
+
+All done...after about five failed builds thanks to the fact that I forgot to change the destination folder for `redirects` :disappointed_relieved:
+
+:ballot_box_with_check: **Custom domain with Netlify DNS**
+
+At this point I was on a roll and decided to go for the custom domain option. I bought a domain name a few weeks ago (only to use it as a custom email address, because vanity, that's why). Netlify made the process super fast and super easy and within five minutes - only because it has been a while I have worked with domain settings - I was all set up.
+
+[Check out my shiny app](http://recat.kriszt.in/)
+
+_TLS certificate in progress_
+
+# Credits
 
 - Photos from Unsplash. Thanks to [Mikhail Vasilyev](https://unsplash.com/@miklevasilyev), [James Sutton](https://unsplash.com/@jamessutton_photography), [Erik-Jan Leusink](https://unsplash.com/@ejleusink), [Yousef Espanioly](https://unsplash.com/@yespanioly), [Yerlin Matu](https://unsplash.com/@yerlinmatu), [Ludemeula Fernandes](https://unsplash.com/@ludemeula).
