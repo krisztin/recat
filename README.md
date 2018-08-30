@@ -50,7 +50,7 @@ Well, the MVP at least. I'll probably spend the next day hooking up the repo wit
 
 But I'm calling it quits for today. It's Saturday, I didn't have much time to fiddle with this but my brain is already protesting (I've just spent 30 minutes debugging a simple `if` statement).
 
-### Day 3
+### Day 3 - Deploying the MVP
 
 :ballot_box_with_check: **Netlify continous deployment**
 
@@ -66,7 +66,17 @@ At this point I was on a roll and decided to go for the custom domain option. I 
 
 [Check out my shiny app](http://recat.kriszt.in/)
 
-_TLS certificate in progress_
+### Day 4 - To Sass or not to Sass
+
+Spent some time researching Sass use in CRA and styling best practices. Went back and forth between: use it, don't use it.
+
+Decision: use it. Went with CRA's recommended setup from the documentation.
+
+#### Oopsie
+
+Now that I've done banging my head against the table and start to find my last hour of suffering hilarious I might as well share with you how much of an idiot/beginner I am.
+
+I wanted a nice and neat folder structure for my css and scss files. So I ran `npm start` and then started fiddling with the scripts for `build-css` and `watch-css`...yeah, well, lesson learned: restart your app once you make a change in your scripts.
 
 # Credits
 
