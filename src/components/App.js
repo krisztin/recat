@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/css/App.css';
 import testCats from '../test-cats';
 import { Link } from 'react-router-dom';
 

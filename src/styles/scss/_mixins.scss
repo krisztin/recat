@@ -1,0 +1,21 @@
+@mixin logo($colour) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' width='512px' height='512px' viewBox='0 0 251.598 251.598' style='enable-background:new 0 0 251.598 251.598;' xml:space='preserve'%3E %3Cg%3E %3Cg%3E %3Cpolygon points='68.142,60.733 26.208,60.733 47.174,97.049 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='20.968,63.76 0,100.076 41.934,100.076 ' fill='%23#{str-slice(#{$colour}, 2)}' /%3E %3Cpolygon points='178.216,63.76 157.25,100.076 199.181,100.076 ' fill='%23#{str-slice(#{$colour}, 2)}' /%3E %3Cpolygon points='230.626,63.76 209.667,100.076 251.598,100.076 ' fill='%23#{str-slice(#{$colour}, 2)}' /%3E %3Cpolygon points='230.626,142.444 251.598,106.128 209.667,106.128 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='199.181,106.128 157.25,106.128 178.216,142.444 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='146.765,106.128 104.833,106.128 125.799,142.444 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='73.382,142.444 94.351,106.128 52.417,106.128 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='0,106.128 20.968,142.444 41.934,106.128 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='26.208,145.47 68.142,145.47 47.174,109.155 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='120.556,145.47 99.59,109.155 78.625,145.47 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='172.973,145.47 152.007,109.155 131.042,145.47 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='183.458,145.47 225.39,145.47 204.424,109.155 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='47.174,18.365 26.208,54.681 68.142,54.681 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='131.042,151.523 152.007,187.838 172.973,151.523 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='78.625,151.523 99.59,187.838 120.556,151.523 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='26.208,151.523 47.174,187.838 68.142,151.523 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='52.417,190.865 94.351,190.865 73.382,154.549 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='104.833,190.865 146.765,190.865 125.799,154.549 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='157.25,190.865 199.181,190.865 178.216,154.549 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='178.216,233.233 199.181,196.917 157.25,196.917 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3Cpolygon points='73.382,233.233 94.351,196.917 52.417,196.917 ' fill='%23#{str-slice(#{$colour}, 2)}'/%3E %3C/g%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3Cg%3E %3C/g%3E %3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%logo {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.logo-white {
+  @include logo('#fff');
+  @extend %logo;
+}
+
+// .logo-primary {
+//   @include logo($primary);
+//   @extend %logo;
+// }

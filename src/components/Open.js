@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/css/Open.css';
 import sampleCats from '../test-cats';
 
 class Open extends React.Component {
