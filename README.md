@@ -31,9 +31,8 @@ Now, on Day 2, with fresh eyes I have an inkling the answer lies with `history.p
 #### The solution!
 
 ```js
-getCat = () => {
-  const cats = { ...this.state.cats };
-  const firstCat = cats[0].name.toLowerCase();
+getFirstCat = () => {
+  const firstCat = this.state.cats[0].name.toLowerCase();
   this.props.history.push(`/cats/${firstCat}`);
 };
 ```
